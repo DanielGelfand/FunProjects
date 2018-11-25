@@ -5,13 +5,11 @@ that is evenly divisible by all of the numbers from 1 to 20?
 
 def smallestDividend():
 
-    for i in range(2525, 300000000):
+    #Increment 2520 to maintain property of divisibiity by first 10 numbers
+    for i in range(2520, 300000000,2520):
 
         valid = True
 
-        #Preliminary factors tests
-        if(i%2 != 0 or i%5!=0 or i%4!=0 or i%3!=0):
-            continue
         #print(i)
         for j in range(11, 21):
 
@@ -26,5 +24,5 @@ def smallestDividend():
             return i
 
     return -1
-    
+
 print(smallestDividend())
