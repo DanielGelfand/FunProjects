@@ -1,1 +1,3 @@
 # FunProjects
+
+Mostly math.
